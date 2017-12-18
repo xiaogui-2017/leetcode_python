@@ -7,6 +7,7 @@ class Solution(object):
     return [0, 1].
     """
 
+
 def two_sum(self, nums, target):
     # 健壮性
     if len(nums) <= 1:
