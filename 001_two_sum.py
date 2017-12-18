@@ -7,19 +7,23 @@ class Solution(object):
     return [0, 1].
     """
 
-    def two_sum(self, nums, target):
-        # 健壮性
-        if len(nums) <= 1:
-            return False
-        buff_dict = {}
-        # 遍历len(nums)次
-        for i in range(len(nums)):
-            if nums[i] in buff_dict:
-                return [buff_dict[nums[i]], i]
-            else:
-                buff_dict[target - nums[i]] = i
+
+def two_sum(self, nums, target):
+    # 健壮性
+    if len(nums) <= 1:
+        return False
+    buff_dict = {}
+    # 遍历len(nums)次
+    for i in range(len(nums)):
+        if nums[i] in buff_dict:
+            return [buff_dict[nums[i]], i]
+        else:
+            buff_dict[target - nums[i]] = i
 
 
 if __name__ == '__main__':
     obj = Solution()
     print obj.two_sum([1, 2, 3, 4], 6)
+if __name__ == "__main__":
+    obj = Solution()
+    print obj.twoSum([2, 7, 11, 15], 9)
