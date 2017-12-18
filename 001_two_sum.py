@@ -24,6 +24,3 @@ def two_sum(self, nums, target):
 if __name__ == '__main__':
     obj = Solution()
     print obj.two_sum([1, 2, 3, 4], 6)
-if __name__ == "__main__":
-    obj = Solution()
-    print obj.twoSum([2, 7, 11, 15], 9)
